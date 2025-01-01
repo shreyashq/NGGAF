@@ -10,12 +10,12 @@ button.addEventListener('click', function(){
         video.style.display = "flex";
         video.setAttribute('autoplay', 'true');
         video.play();
-        console.log('inside fucntion')
+        video.preventDefault();
     }
     count++;
     console.log(count);
 
-    if(count == 10){
+    if(count == 6){
         meme.style.display = "block"
         paragraph.style.display = "block";
     }
