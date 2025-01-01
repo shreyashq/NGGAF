@@ -10,7 +10,6 @@ button.addEventListener('click', function(){
         video.style.display = "flex";
         video.setAttribute('autoplay', 'true');
         video.play();
-        video.preventDefault();
     }
     count++;
     console.log(count);
@@ -19,4 +18,8 @@ button.addEventListener('click', function(){
         meme.style.display = "block"
         paragraph.style.display = "block";
     }
+});
+
+video.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
 });
